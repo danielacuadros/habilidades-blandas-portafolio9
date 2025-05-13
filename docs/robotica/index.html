@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decálogo de Gestión de Emociones</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .infographic {
+            background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #8ECAE6 0%, #219EBC 100%);
+            color: rgb(21, 69, 102);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%23f8f9fa" opacity=".25"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="%23f8f9fa" opacity=".5"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%23f8f9fa"/></svg>');
+            background-size: cover;
+            z-index: 1;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .decalogue {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .tip {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .tip:hover {
+            transform: translateY(-5px);
+        }
+        
+        .tip-number {
+            background-color: #219EBC;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .tip-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #2B2D42;
+            font-size: 1.1rem;
+        }
+        
+        .tip-description {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #023047;
+            color: white;
+            border-radius: 0 0 15px 15px;
+        }
+        
+        .quote {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .author {
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        .credits {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .decalogue {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="infographic">
+            <div class="header">
+                <h1>10 Claves para Navegar tus Emociones</h1>
+                <p>Decálogo de Gestión Emocional y Autocontrol</p>
+                <div class="wave"></div>
+            </div>
+            
+            <div class="content">
+                <div class="decalogue">
+                    <!-- Tip 1 -->
+                    <div class="tip">
+                        <div class="tip-number">1</div>
+                        <div class="tip-title">Pausa antes de reaccionar</div>
+                        <div class="tip-description">Respira profundamente 3 veces cuando sientas emociones intensas. Este espacio te ayuda a responder en lugar de reaccionar.</div>
+                    </div>
+                    
+                    <!-- Tip 2 -->
+                    <div class="tip">
+                        <div class="tip-number">2</div>
+                        <div class="tip-title">Nombra lo que sientes</div>
+                        <div class="tip-description">Identifica y etiqueta tus emociones. ¿Es ira, frustración o tal vez miedo? Nombrarlas reduce su intensidad.</div>
+                    </div>
+                    
+                    <!-- Tip 3 -->
+                    <div class="tip">
+                        <div class="tip-number">3</div>
+                        <div class="tip-title">Escucha las señales de tu cuerpo</div>
+                        <div class="tip-description">Tensión en el estómago, pulso acelerado... tu cuerpo habla. Reconócelo como un sistema de alerta temprana.</div>
+                    </div>
+                    
+                    <!-- Tip 4 -->
+                    <div class="tip">
+                        <div class="tip-number">4</div>
+                        <div class="tip-title">Usa el lenguaje "Yo siento"</div>
+                        <div class="tip-description">Comunica desde tu experiencia: "Yo me siento..." en lugar de "Tú me haces...". Esto evita culpas y abre diálogos.</div>
+                    </div>
+                    
+                    <!-- Tip 5 -->
+                    <div class="tip">
+                        <div class="tip-number">5</div>
+                        <div class="tip-title">Busca la necesidad oculta</div>
+                        <div class="tip-description">Detrás de cada emoción hay una necesidad. Pregúntate: ¿Qué valor o carencia está tocando esta situación?</div>
+                    </div>
+                    
+                    <!-- Tip 6 -->
+                    <div class="tip">
+                        <div class="tip-number">6</div>
+                        <div class="tip-title">Acepta todas tus emociones</div>
+                        <div class="tip-description">No hay emociones "malas". Hasta la rabia o la tristeza tienen información valiosa para ti.</div>
+                    </div>
+                    
+                    <!-- Tip 7 -->
+                    <div class="tip">
+                        <div class="tip-number">7</div>
+                        <div class="tip-title">Practica la autocompasión</div>
+                        <div class="tip-description">Trátate como tratarías a un amigo querido. Sé amable contigo en momentos difíciles.</div>
+                    </div>
+                    
+                    <!-- Tip 8 -->
+                    <div class="tip">
+                        <div class="tip-number">8</div>
+                        <div class="tip-title">Crea rituales de calma</div>
+                        <div class="tip-description">Desarrolla prácticas que te centren: escribir, caminar, música... algo que te conecte con el presente.</div>
+                    </div>
+                    
+                    <!-- Tip 9 -->
+                    <div class="tip">
+                        <div class="tip-number">9</div>
+                        <div class="tip-title">Aprende a soltar</div>
+                        <div class="tip-description">No puedes controlar todo. Suelta lo que no depende de ti y enfócate en lo que sí puedes cambiar.</div>
+                    </div>
+                    
+                    <!-- Tip 10 -->
+                    <div class="tip">
+                        <div class="tip-number">10</div>
+                        <div class="tip-title">Reflexiona cada día</div>
+                        <div class="tip-description">Al final del día, pregúntate: ¿Cómo gestioné mis emociones hoy? ¿Qué puedo aprender de esto?</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="quote">"Las emociones son como olas: no puedes detenerlas, pero sí aprender a surfearlas"</div>
+                <div class="author">Jon Kabat-Zinn</div>
+            </div>
+        </div>
+
+        <div class="credits">
+            Trabajo creado por Daniela Cuadros para el curso de Habilidades Blandas - Portafolio 9
+        </div>
+    </div>
+</body>
+</html>
